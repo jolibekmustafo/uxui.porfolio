@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google SEO -->
+    <title>Jo‘libek Mustafo — UX/UI Designer</title>
+    <meta name="description" content="Jo‘libek Mustafo — UX/UI Designer creating modern, intuitive and user-centered digital experiences.">
+    <meta name="keywords" content="Jo‘libek Mustafo, UX UI Designer, UX Designer, UI Designer, Uzbekistan Designer, Samarqand Designer">
+    <meta name="author" content="Jo‘libek Mustafo">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0b0b0f;
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* NAVBAR */
+
+        nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .logo span {
+            color: #8b5cf6;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: #aaa;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: white;
+        }
+
+        /* HERO */
+
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .small-title {
+            color: #8b5cf6;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-size: 18px;
+        }
+
+        .hero h1 {
+            font-size: clamp(50px, 8vw, 100px);
+            line-height: 1;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #8b5cf6;
+        }
+
+        .hero p {
+            color: #aaa;
+            max-width: 650px;
+            font-size: 19px;
+            margin-bottom: 35px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 14px 25px;
+            border-radius: 8px;
+            border: 1px solid #333;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #8b5cf6;
+            border-color: #8b5cf6;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            opacity: 0.9;
+        }
+
+        .btn-secondary:hover {
+            background: #18181d;
+        }
+
+        /* SECTION */
+
+        section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            font-size: 45px;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #8b5cf6;
+        }
+
+        /* ABOUT */
+
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .about p {
+            color: #aaa;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            padding: 10px 18px;
+            border: 1px solid #333;
+            border-radius: 30px;
+            color: #ccc;
+        }
+
+        /* PROJECTS */
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+
+        .project {
+            min-height: 300px;
+            background: #15151b;
+            border: 1px solid #24242c;
+            border-radius: 18px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            transition: 0.3s;
+        }
+
+        .project:hover {
+            transform: translateY(-7px);
+            border-color: #8b5cf6;
+        }
+
+        .project-number {
+            color: #8b5cf6;
+            margin-bottom: auto;
+        }
+
+        .project h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #999;
+        }
+
+        /* CONTACT */
+
+        .contact {
+            text-align: center;
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .contact h2 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            color: #999;
+            margin-bottom: 30px;
+        }
+
+        /* FOOTER */
+
+        footer {
+            border-top: 1px solid #222;
+            padding: 30px 0;
+            color: #777;
+            text-align: center;
+        }
+
+        /* MOBILE */
+
+        @media (max-width: 768px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                min-height: 550px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .contact h2 {
+                font-size: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">
+                    Jo‘libek<span>.</span>
+                </a>
+
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+    <!-- HERO -->
+
+    <main>
+
+        <section class="hero" id="home">
+            <div class="container">
+
+                <div class="hero-content">
+
+                    <div class="small-title">
+                        UX/UI DESIGNER
+                    </div>
+
+                    <h1>
+                        I design<br>
+                        <span>digital experiences.</span>
+                    </h1>
+
+                    <p>
+                        I'm Jo‘libek Mustafo, a UX/UI Designer focused on
+                        creating clean, modern and user-centered digital products.
+                    </p>
+
+                    <div class="buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Work
+                        </a>
+
+                        <a href="#contact" class="btn btn-secondary">
+                            Contact Me
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+
+        <section id="about">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    About <span>Me</span>
+                </h2>
+
+                <div class="about">
+
+                    <div>
+                        <p>
+                            I'm a passionate UX/UI Designer who enjoys turning
+                            complex problems into simple, beautiful and intuitive
+                            digital experiences.
+                        </p>
+
+                        <br>
+
+                        <p>
+                            My goal is to create interfaces that look great,
+                            feel natural and are easy to use.
+                        </p>
+                    </div>
+
+                    <div>
+
+                        <h3>My Skills</h3>
+
+                        <br>
+
+                        <div class="skills">
+
+                            <div class="skill">Figma</div>
+                            <div class="skill">UX Research</div>
+                            <div class="skill">UI Design</div>
+                            <div class="skill">Wireframing</div>
+                            <div class="skill">Prototyping</div>
+                            <div class="skill">Design System</div>
+                            <div class="skill">Responsive Design</div>
+                            <div class="skill">User Research</div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- PROJECTS -->
+
+        <section id="projects">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Selected <span>Projects</span>
+                </h2>
+
+                <div class="projects">
+
+                    <a href="#" class="project">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>Mobile Banking App</h3>
+
+                        <p>
+                            UX/UI design for a modern mobile banking experience.
+                        </p>
+
+                    </a>
+
+
+                    <a href="#" class="project">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>E-Commerce Website</h3>
+
+                        <p>
+                            Clean and conversion-focused online shopping experience.
+                        </p>
+
+                    </a>
+
+
+                    <a href="#" class="project">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h3>Dashboard Design</h3>
+
+                        <p>
+                            Modern analytics dashboard with a clear user experience.
+                        </p>
+
+                    </a>
+
+
+                    <a href="#" class="project">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <h3>Travel App</h3>
+
+                        <p>
+                            Mobile travel application focused on simplicity and usability.
+                        </p>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+
+        <section id="contact">
+
+            <div class="container">
+
+                <div class="contact">
+
+                    <h2>
+                        Let's work<br>
+                        <span>together.</span>
+                    </h2>
+
+                    <p>
+                        Have a project in mind? Feel free to contact me.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a
+                            href="mailto:your@email.com"
+                            class="btn btn-primary">
+                            Email Me
+                        </a>
+
+                        <a
+                            href="https://t.me/"
+                            class="btn btn-secondary"
+                            target="_blank">
+                            Telegram
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="container">
+
+            © 2026 Jo‘libek Mustafo. All rights reserved.
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
